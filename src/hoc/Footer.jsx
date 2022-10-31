@@ -22,8 +22,21 @@ const useStyes = makeStyles({
     backgroundColor: "#20232a",
     maxWidth: "1200px",
     display: "flex",
+    flexWrap: "wrap",
     justifyContent: "space-between",
     margin: "30px 0px",
+    "@media (max-width: 1259px)": {
+      maxWidth: "900px",
+    },
+    "@media (max-width: 990px)": {
+      maxWidth: "600px",
+    },
+    "@media (max-width: 645px)": {
+      maxWidth: "400px",
+    },
+    "@media (max-width: 450px)": {
+      maxWidth: "320px",
+    },
   },
   hyperlinkDiv: {
     display: "flex",
