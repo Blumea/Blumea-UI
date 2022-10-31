@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     display: "grid",
     gridTemplateColumns: "60% 30%",
     justifyContent: "space-between",
-    margin: "50px 0px 100px",
+    margin: "0px 0px 80px",
     "& h1": {
       fontSize: "50px",
     },
@@ -43,13 +43,23 @@ const useStyles = makeStyles({
     },
   },
   HighLight: {
-    color: "#4BF7CB",
+    color: "#61dafb",
   },
   TextDiv: {
     "@media (max-width: 1259px)": {
       order: -1,
       "& h1": {
         textAlign: "center",
+      },
+      "& p": {
+        textAlign: "center",
+      },
+    },
+    "@media (max-width: 1259px)": {
+      order: -1,
+      "& h1": {
+        textAlign: "center",
+        fontSize: "40px",
       },
       "& p": {
         textAlign: "center",
