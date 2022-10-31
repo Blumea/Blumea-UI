@@ -19,9 +19,13 @@ const useStyes = makeStyles({
       gridTemplateColumns: "auto",
       justifyContent: "center",
     },
+    "@media (max-width: 565px)": {
+      margin: "30px 0px",
+    },
   },
   featureDiv: {
     width: "380px",
+    height: "250px",
     "@media (max-width: 865px)": {
       margin: "0px 0px 30px",
     },

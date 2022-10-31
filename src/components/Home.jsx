@@ -26,6 +26,9 @@ const useStyes = makeStyles({
     fontSize: "60px",
     display: "flex",
     justifyContent: "center",
+    "@media (max-width: 565px)": {
+      fontSize: "48px",
+    },
   },
   subTitle: {
     color: "#fff",
@@ -34,6 +37,9 @@ const useStyes = makeStyles({
     zIndex: 1,
     margin: "20px 0px 60px ",
     textAlign: "center",
+    "@media (max-width: 565px)": {
+      fontSize: "22px",
+    },
   },
   hyperlinkDiv: {
     display: "flex",
