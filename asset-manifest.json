@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/blumea-ui2022/static/css/main.a25811df.css",
+    "main.js": "/blumea-ui2022/static/js/main.d4c6ba02.js",
+    "static/media/BG-Edit.png": "/blumea-ui2022/static/media/BG-Edit.53cbadaff50779804d18.png",
+    "static/media/SampleUse.svg": "/blumea-ui2022/static/media/SampleUse.7bbcb8eee4e4db71c3357490710af643.svg",
+    "static/media/import.svg": "/blumea-ui2022/static/media/import.654410e0e01fbd4ab4c1b392fe5cfbf9.svg",
+    "index.html": "/blumea-ui2022/index.html",
+    "main.a25811df.css.map": "/blumea-ui2022/static/css/main.a25811df.css.map",
+    "main.d4c6ba02.js.map": "/blumea-ui2022/static/js/main.d4c6ba02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a25811df.css",
+    "static/js/main.d4c6ba02.js"
+  ]
+}
