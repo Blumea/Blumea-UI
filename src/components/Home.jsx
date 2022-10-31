@@ -50,6 +50,7 @@ const useStyes = makeStyles({
     },
   },
   baseButton: {
+    textDecoration: "none",
     width: "150px",
     height: "50px",
     backgroundColor: "#61dafb",

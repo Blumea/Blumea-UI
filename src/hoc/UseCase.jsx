@@ -20,6 +20,9 @@ const useStyles = makeStyles({
     },
     "@media (max-width: 1259px)": {
       gridTemplateColumns: "auto",
+      justifyContent: "center",
+      // alignItems: "center",
+      margin: "5px 0px 5px",
     },
   },
   UseCaseDiv: {
@@ -35,10 +38,23 @@ const useStyles = makeStyles({
     },
     "@media (max-width: 1259px)": {
       gridTemplateColumns: "auto",
+      justifyContent: "center",
+      margin: "20px 0px 80px",
     },
   },
   HighLight: {
     color: "#4BF7CB",
+  },
+  TextDiv: {
+    "@media (max-width: 1259px)": {
+      order: -1,
+      "& h1": {
+        textAlign: "center",
+      },
+      "& p": {
+        textAlign: "center",
+      },
+    },
   },
 });
 function UseCase() {
