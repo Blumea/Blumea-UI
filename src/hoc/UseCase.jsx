@@ -43,7 +43,7 @@ const useStyles = makeStyles({
     },
   },
   HighLight: {
-    color: "#61dafb",
+    color: "#29caa5",
   },
   TextDiv: {
     "@media (max-width: 1259px)": {

@@ -21,7 +21,7 @@ const useStyes = makeStyles({
     zIndex: -1,
   },
   brandName: {
-    color: "#61dafb",
+    color: "#29caa5",
     fontWeight: 700,
     fontSize: "60px",
     display: "flex",
@@ -53,7 +53,8 @@ const useStyes = makeStyles({
     textDecoration: "none",
     width: "150px",
     height: "50px",
-    backgroundColor: "#61dafb",
+    // backgroundColor: "#61dafb",
+    backgroundColor: "#29caa5",
     fontSize: "21px",
     border: "none",
     outline: "none",
@@ -62,7 +63,8 @@ const useStyes = makeStyles({
     },
   },
   docLink: {
-    color: "#61dafb",
+    // color: "#61dafb",
+    color: "#29caa5",
     fontSize: "21px",
     fontWeight: 400,
     marginLeft: "20px",

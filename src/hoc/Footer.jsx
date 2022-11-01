@@ -47,13 +47,13 @@ const useStyes = makeStyles({
   baseButton: {
     width: "150px",
     height: "50px",
-    backgroundColor: "#61dafb",
+    backgroundColor: "#29caa5",
     fontSize: "21px",
     border: "none",
     outline: "none",
   },
   docLink: {
-    color: "#61dafb",
+    color: "#29caa5",
     fontSize: "21px",
     fontWeight: 400,
     marginLeft: "20px",
@@ -73,7 +73,7 @@ const useStyes = makeStyles({
     },
   },
   footerBrandTitle: {
-    color: "#61dafb",
+    color: "#29caa5",
     fontSize: "26px",
     fontWeight: 700,
   },

@@ -20,7 +20,8 @@ const useStyes = makeStyles({
     alignItems: "center",
   },
   brandPlate: {
-    color: "#61dafb",
+    // color: "#61dafb",
+    color: "#29caa5",
     fontSize: "24px",
     fontWeight: 700,
     display: "flex",
