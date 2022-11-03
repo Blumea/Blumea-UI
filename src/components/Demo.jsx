@@ -9,6 +9,27 @@ import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    primary: {
+      main: "#0971f1",
+      darker: "#053e85",
+    },
+    neutral: {
+      main: "#64748B",
+      contrastText: "#fff",
+    },
+    custom: {
+      main: "#29caa5",
+      darker: "#1a5a60",
+    },
+  },
+});
 const useStyles = makeStyles({
   mainDiv: {
     // backgroundColor: "#32363e",
@@ -111,60 +132,64 @@ function Demo() {
             <FormLabel id="demo-row-radio-buttons-group-label">
               Choose Action
             </FormLabel>
-            <RadioGroup
-              aria-labelledby="demo-row-radio-buttons-group-label"
-              name="row-radio-buttons-group"
-              defaultValue="create"
-            >
-              <FormControlLabel
-                value="create"
-                control={<Radio color="success" />}
-                label="Create"
-              />
-              <FormControlLabel
-                value="search"
-                control={<Radio color="success" />}
-                label="Search"
-              />
-            </RadioGroup>
+            <ThemeProvider theme={theme}>
+              <RadioGroup
+                aria-labelledby="demo-row-radio-buttons-group-label"
+                name="row-radio-buttons-group"
+                defaultValue="create"
+              >
+                <FormControlLabel
+                  value="create"
+                  control={<Radio color="custom" />}
+                  label="Create"
+                />
+                <FormControlLabel
+                  value="search"
+                  control={<Radio color="custom" />}
+                  label="Search"
+                />
+              </RadioGroup>
+            </ThemeProvider>
           </FormControl>
           <FormControl>
             <FormLabel id="demo-row-radio-buttons-group-label">
               Choose Filter Type
             </FormLabel>
-            <RadioGroup
-              aria-labelledby="demo-row-radio-buttons-group-label"
-              name="row-radio-buttons-group"
-              defaultValue="type2"
-            >
-              <FormControlLabel
-                value="type1"
-                control={<Radio color="success" />}
-                label="Type 1"
-              />
-              <FormControlLabel
-                value="type2"
-                control={<Radio color="success" />}
-                label="Type 2"
-              />
-              <FormControlLabel
-                value="type3"
-                control={<Radio color="success" />}
-                label="Type 3"
-              />
-              <FormControlLabel
-                value="type4"
-                control={<Radio color="success" />}
-                label="Type 4"
-              />
-            </RadioGroup>
+            <ThemeProvider theme={theme}>
+              <RadioGroup
+                aria-labelledby="demo-row-radio-buttons-group-label"
+                name="row-radio-buttons-group"
+                defaultValue="type2"
+              >
+                <FormControlLabel
+                  value="type1"
+                  control={<Radio color="custom" />}
+                  label="Type 1"
+                />
+                <FormControlLabel
+                  value="type2"
+                  control={<Radio color="custom" />}
+                  label="Type 2"
+                />
+                <FormControlLabel
+                  value="type3"
+                  control={<Radio color="custom" />}
+                  label="Type 3"
+                />
+                <FormControlLabel
+                  value="type4"
+                  control={<Radio color="custom" />}
+                  label="Type 4"
+                />
+              </RadioGroup>
+            </ThemeProvider>
           </FormControl>
         </div>
         <div className={classes.searchSection}>
           <div className={classes.textDiv}>
             <TextField
               fullWidth
-              sx={{margin: "20px 0px"}}
+              sx={{ margin: "20px 0px" }}
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
@@ -182,10 +207,11 @@ function Demo() {
               }}
             />
           </div>
-
-          <Button variant="contained" size="large" color="success">
-            Create User
-          </Button>
+          <ThemeProvider theme={theme}>
+            <Button variant="contained" size="large" color="custom">
+              Create User
+            </Button>
+          </ThemeProvider>
         </div>
       </div>
     </div>
