@@ -139,7 +139,7 @@ function Demo() {
     setStatusCode(0);
   }, [value]);
   useEffect(() => {
-    if (value !== "") {
+    if (value !== "" && action!=="search") {
       backendSearch(value);
     }
   }, [user]);
@@ -163,35 +163,55 @@ function Demo() {
     []
   );
   const handleClick = () => {
-    if (statusCode === 1) {
+    if (action === "create") {
+      if (statusCode === 1) {
+        fetch(
+          `https://blumea-serverless.vercel.app/bloomfilter/create?item=${value}`
+        )
+          .then((res) => res.json())
+          .then((json) => {
+            console.log(json);
+            if (json.status === 201) {
+              setMessageCode("success");
+              setMessage("User Created Successfully");
+              setOpen(true);
+              setStatusCode(0);
+              setHelperMessage("");
+              setValue("");
+              setUser("");
+            } else {
+            }
+          });
+      } else {
+        setMessageCode("error");
+        setMessage("User Creation Failed");
+        setOpen(true);
+        setStatusCode(0);
+        setHelperMessage("");
+        setValue("");
+        setUser("");
+      } // do nothing
+    } else {
       fetch(
-        `https://blumea-serverless.vercel.app/bloomfilter/create?item=${value}`
+        `https://blumea-serverless.vercel.app/bloomfilter/search?item=${value}`
       )
         .then((res) => res.json())
         .then((json) => {
-          console.log(json);
-          if (json.status === 201) {
+          if (json.data.isfound === true) {
             setMessageCode("success");
-            setMessage("User Created Successfully");
+            setMessage("User Found");
             setOpen(true);
             setStatusCode(0);
-            setHelperMessage("");
-            setValue("");
-            setUser("");
-          } else {
-            
+          }
+          else
+          {
+            setMessageCode("error");
+            setMessage("User Not Found");
+            setOpen(true);
+            setStatusCode(0);
           }
         });
-    } else {
-      setMessageCode("error");
-      setMessage("User Creation Failed");
-      setOpen(true);
-      setStatusCode(0);
-      setHelperMessage("");
-      setValue("");
-      setUser("");
-    } // do nothing
-    setOpen(true);
+    }
   };
 
   const handleClose = (event, reason) => {
@@ -244,7 +264,13 @@ function Demo() {
                   value="search"
                   control={<Radio color="custom" />}
                   label="Search"
-                  onClick={() => setAction("search")}
+                  onClick={() => {
+                    setAction("search");
+                    setStatusCode(0);
+                    setHelperMessage("");
+                    setValue("");
+                    setUser("");
+                  }}
                 />
               </RadioGroup>
             </ThemeProvider>
@@ -327,6 +353,9 @@ function Demo() {
               size="large"
               color="custom"
               onClick={handleClick}
+              disabled={
+                statusCode === 1 ? false : action !== "search" ? true : false
+              }
             >
               {action === "search" ? "Search User" : "Create User"}
             </Button>

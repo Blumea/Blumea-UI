@@ -171,6 +171,7 @@ function Footer() {
           {/* <button className={classes.baseButton}>Get Started</button> */}
           <ThemeProvider theme={theme}>
             <Button
+              href="https://www.npmjs.com/package/blumea"
               variant="contained"
               size="large"
               color="custom"
@@ -188,6 +189,7 @@ function Footer() {
             </span> */}
             <ThemeProvider theme={theme}>
               <Button
+                href="https://blumea-filters-ekuc20lg4-medhavi11.vercel.app/"
                 variant="outlined"
                 sx={{
                   margin: "10px 5px 10px 5px",

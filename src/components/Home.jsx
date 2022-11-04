@@ -122,6 +122,7 @@ function Home() {
           {/* <button className={classes.baseButton}>Get Started</button> */}
           <ThemeProvider theme={theme}>
             <Button
+              href="https://www.npmjs.com/package/blumea"
               variant="contained"
               size="large"
               color="custom"
@@ -132,26 +133,21 @@ function Home() {
               Get Started
             </Button>
           </ThemeProvider>
-          <a>
-            {/* <span className={classes.docLink}>
-              Take The Tutorial&nbsp;
-              <NavigateNextOutlinedIcon />
-            </span> */}
-            <ThemeProvider theme={theme}>
-              <Button
-                variant="outlined"
-                sx={{
-                  margin: "10px",
-                  // padding: "7px",
-                }}
-                size="large"
-                endIcon={<NavigateNextOutlinedIcon />}
-                color="custom"
-              >
-                Take a Tour
-              </Button>
-            </ThemeProvider>
-          </a>
+          <ThemeProvider theme={theme}>
+            <Button
+              href="https://blumea-filters-ekuc20lg4-medhavi11.vercel.app/"
+              variant="outlined"
+              sx={{
+                margin: "10px",
+                // padding: "7px",
+              }}
+              size="large"
+              endIcon={<NavigateNextOutlinedIcon />}
+              color="custom"
+            >
+              Take a Tour
+            </Button>
+          </ThemeProvider>
         </div>
       </div>
     </div>
