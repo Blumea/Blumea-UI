@@ -10,7 +10,12 @@ import FormLabel from "@mui/material/FormLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
 
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 const theme = createTheme({
   status: {
     danger: "#e53e3e",
@@ -122,8 +127,32 @@ function Demo() {
   const [value, setValue] = React.useState("");
   const [user, setUser] = React.useState("");
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
   return (
     <div className={classes.mainDiv}>
+      <Snackbar
+        open={open}
+        autoHideDuration={3000}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+      >
+        <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
+          This is a success message!
+        </Alert>
+      </Snackbar>
       <div className={classes.HeaderSection}>
         <div className={classes.mainOne}>Wanna try this out?</div>
         <div className={classes.mainTwo}>See its Working in Real Time</div>
@@ -142,9 +171,7 @@ function Demo() {
               >
                 <FormControlLabel
                   value="create"
-                  control={
-                    <Radio color="custom"/>
-                  }
+                  control={<Radio color="custom" />}
                   label="Create"
                   onClick={() => setAction("create")}
                 />
@@ -214,7 +241,12 @@ function Demo() {
             />
           </div>
           <ThemeProvider theme={theme}>
-            <Button variant="contained" size="large" color="custom">
+            <Button
+              variant="contained"
+              size="large"
+              color="custom"
+              onClick={handleClick}
+            >
               {action === "search" ? "Search User" : "Create User"}
             </Button>
           </ThemeProvider>
