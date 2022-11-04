@@ -34,9 +34,10 @@ const useStyes = makeStyles({
     },
   },
   featureHeading: {
-    color: "#87929b",
+    // color: "#87929b",
+    color: "#106458",
     fontSize: "28px",
-    fontWeight: 300,
+    fontWeight: 500,
     marginBottom: "20px",
   },
   Desc: {

@@ -116,7 +116,7 @@ function Home() {
       <div className={classes.centeralSection}>
         <span className={classes.brandName}>Blumea</span>
         <div className={classes.subTitle}>
-          An NPM package to Bloomify all your projects with blumea.
+          An NPM package to Bloomify all your projects.
         </div>
         <div className={classes.hyperlinkDiv}>
           {/* <button className={classes.baseButton}>Get Started</button> */}
@@ -142,13 +142,13 @@ function Home() {
                 variant="outlined"
                 sx={{
                   margin: "10px",
-                  padding: "7px",
+                  // padding: "7px",
                 }}
                 size="large"
                 endIcon={<NavigateNextOutlinedIcon />}
                 color="custom"
               >
-                Take the Tutorial
+                Take a Tour
               </Button>
             </ThemeProvider>
           </a>

@@ -191,13 +191,13 @@ function Footer() {
                 variant="outlined"
                 sx={{
                   margin: "10px 5px 10px 5px",
-                  padding: "7px",
+                  // padding: "7px",
                 }}
                 size="large"
                 endIcon={<NavigateNextOutlinedIcon />}
                 color="custom"
               >
-                Take the Tutorial
+                Take a tour
               </Button>
             </ThemeProvider>
           </a>
@@ -208,26 +208,28 @@ function Footer() {
           <img src={Logo} width="50px" />
           &nbsp;<span className={classes.footerBrandTitle}>Blumea</span>
           <p>
-            React makes it painless to create interactive UIs. Design simple
-            views for each state in your application, and React will efficiently
-            update and render just the right components when your data changes.
+            Blumea makes it easy for anyone to implement data lookup and storage
+            through a plentitude of data. No matter how big the data is, Blumea
+            will ensure that you will get the results to your
+            needle-in-a-haystack searches quickly and efficiently.
           </p>
         </div>
         <div className={classes.footerPLink}>
-          <h3>Docs</h3>
+          <h3>Resources</h3>
           <ul>
-            <li>Installation</li>
+            <li>Getting Started</li>
             <li>Main Concepts</li>
-            <li>Contrubuting</li>
-            <li>FAQ</li>
+            <li>Open Source</li>
+            <li>Docs</li>
           </ul>
         </div>
         <div className={classes.footerSLink}>
           <h3>Links</h3>
           <ul>
-            <li>Documentation</li>
-            <li>Contact Us</li>
             <li>About</li>
+            <li>FAQ</li>
+            <li>Community</li>
+            <li>Contact Us</li>
           </ul>
         </div>
       </div>
