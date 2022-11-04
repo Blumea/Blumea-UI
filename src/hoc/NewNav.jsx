@@ -67,6 +67,7 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
     height: "50px",
+    width: "max-content",
     // justifyContent: "center",
     // alignItems: "center",
   },

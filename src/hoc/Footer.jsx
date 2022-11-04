@@ -175,7 +175,7 @@ function Footer() {
               size="large"
               color="custom"
               sx={{
-                margin: "10px 5px 10px 10px",
+                margin: "10px 5px 10px 5px",
               }}
             >
               Get Started
@@ -190,7 +190,7 @@ function Footer() {
               <Button
                 variant="outlined"
                 sx={{
-                  margin: "10px 10px 10px 5px",
+                  margin: "10px 5px 10px 5px",
                   padding: "7px",
                 }}
                 size="large"
