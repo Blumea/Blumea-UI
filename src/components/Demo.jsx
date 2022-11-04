@@ -150,7 +150,7 @@ function Demo() {
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
       >
         <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
-          This is a success message!
+          This is an error message!
         </Alert>
       </Snackbar>
       <div className={classes.HeaderSection}>
