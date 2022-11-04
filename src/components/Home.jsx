@@ -2,6 +2,27 @@ import React from "react";
 import { makeStyles } from "@mui/styles";
 import NavigateNextOutlinedIcon from "@mui/icons-material/NavigateNextOutlined";
 import LogoWhite from "../assets/BG-Edit.png";
+import Button from "@mui/material/Button";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    primary: {
+      main: "#0971f1",
+      darker: "#053e85",
+    },
+    neutral: {
+      main: "#64748B",
+      contrastText: "#fff",
+    },
+    custom: {
+      main: "#29caa5",
+      darker: "#1a5a60",
+    },
+  },
+});
 const useStyes = makeStyles({
   mainDiv: {
     backgroundColor: "#282c34",
@@ -98,12 +119,33 @@ function Home() {
           An NPM package to Bloomify all your projects with blumea.
         </div>
         <div className={classes.hyperlinkDiv}>
-          <button className={classes.baseButton}>Get Started</button>
+          {/* <button className={classes.baseButton}>Get Started</button> */}
+          <ThemeProvider theme={theme}>
+            <Button
+              variant="contained"
+              size="large"
+              color="custom"
+              sx={{ margin: "10px 0px" }}
+            >
+              Get Started
+            </Button>
+          </ThemeProvider>
           <a>
-            <span className={classes.docLink}>
+            {/* <span className={classes.docLink}>
               Take The Tutorial&nbsp;
               <NavigateNextOutlinedIcon />
-            </span>
+            </span> */}
+            <ThemeProvider theme={theme}>
+              <Button
+                variant="outlined"
+                sx={{ margin: "10px 0px", padding: "7px" }}
+                size="large"
+                endIcon={<NavigateNextOutlinedIcon />}
+                color="custom"
+              >
+                Take the Tutorial
+              </Button>
+            </ThemeProvider>
           </a>
         </div>
       </div>
