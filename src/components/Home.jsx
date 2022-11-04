@@ -125,7 +125,9 @@ function Home() {
               variant="contained"
               size="large"
               color="custom"
-              sx={{ margin: "10px 0px" }}
+              sx={{
+                margin: "10px",
+              }}
             >
               Get Started
             </Button>
@@ -138,7 +140,10 @@ function Home() {
             <ThemeProvider theme={theme}>
               <Button
                 variant="outlined"
-                sx={{ margin: "10px 0px", padding: "7px" }}
+                sx={{
+                  margin: "10px",
+                  padding: "7px",
+                }}
                 size="large"
                 endIcon={<NavigateNextOutlinedIcon />}
                 color="custom"

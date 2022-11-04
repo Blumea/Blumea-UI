@@ -170,7 +170,14 @@ function Footer() {
         <div className={classes.hyperlinkDiv}>
           {/* <button className={classes.baseButton}>Get Started</button> */}
           <ThemeProvider theme={theme}>
-            <Button variant="contained" size="large" color="custom">
+            <Button
+              variant="contained"
+              size="large"
+              color="custom"
+              sx={{
+                margin: "10px 5px 10px 10px",
+              }}
+            >
               Get Started
             </Button>
           </ThemeProvider>
@@ -183,7 +190,9 @@ function Footer() {
               <Button
                 variant="outlined"
                 sx={{
-                  margin: "5px",padding: "7px"}}
+                  margin: "10px 10px 10px 5px",
+                  padding: "7px",
+                }}
                 size="large"
                 endIcon={<NavigateNextOutlinedIcon />}
                 color="custom"

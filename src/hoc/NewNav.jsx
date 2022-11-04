@@ -63,6 +63,10 @@ const useStyles = makeStyles({
     fontSize: "24px",
     fontWeight: 700,
     display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "50px",
     // justifyContent: "center",
     // alignItems: "center",
   },
@@ -108,7 +112,7 @@ function DrawerAppBar(props) {
       {/* <Typography variant="h6" sx={{ my: 2 }}> */}
       <div className={classes.brandPlate}>
         {/* <img src={Logo} alt="Logo" width="40px" /> */}
-        &nbsp; Blumea
+        &nbsp;Blumea
       </div>
       {/* </Typography> */}
       <Divider />
