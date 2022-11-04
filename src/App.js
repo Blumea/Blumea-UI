@@ -7,6 +7,7 @@ import Footer from "./hoc/Footer";
 import { makeStyles } from "@mui/styles";
 import UseCase from "./hoc/UseCase";
 import Demo from "./components/Demo";
+import NewNav from "./hoc/NewNav";
 const useStyles = makeStyles({
   mainDiv: {
     display: "flex",
@@ -20,7 +21,8 @@ function App() {
   return (
     <div className={classes.mainDiv}>
       {/* <TopBar /> */}
-      <Navbar />
+      <NewNav />
+      {/* <Navbar /> */}
       <Home />
       <Feature />
       <Demo />

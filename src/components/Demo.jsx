@@ -117,6 +117,8 @@ const useStyles = makeStyles({
   },
 });
 function Demo() {
+  const [action, setAction] = React.useState("create");
+  const [filter, setFilter] = React.useState("type2");
   const [value, setValue] = React.useState("");
   const [user, setUser] = React.useState("");
   const classes = useStyles();
@@ -140,13 +142,17 @@ function Demo() {
               >
                 <FormControlLabel
                   value="create"
-                  control={<Radio color="custom" />}
+                  control={
+                    <Radio color="custom"/>
+                  }
                   label="Create"
+                  onClick={() => setAction("create")}
                 />
                 <FormControlLabel
                   value="search"
                   control={<Radio color="custom" />}
                   label="Search"
+                  onClick={() => setAction("search")}
                 />
               </RadioGroup>
             </ThemeProvider>
@@ -209,7 +215,7 @@ function Demo() {
           </div>
           <ThemeProvider theme={theme}>
             <Button variant="contained" size="large" color="custom">
-              Create User
+              {action === "search" ? "Search User" : "Create User"}
             </Button>
           </ThemeProvider>
         </div>
