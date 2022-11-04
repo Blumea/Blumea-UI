@@ -159,7 +159,7 @@ function Demo() {
             setHelperMessage(`${val} is available`);
           }
         });
-    }, 1000),
+    }, 500),
     []
   );
   const handleClick = () => {
