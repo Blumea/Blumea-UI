@@ -135,7 +135,7 @@ function Home() {
           </ThemeProvider>
           <ThemeProvider theme={theme}>
             <Button
-              href="https://blumea-filters-ekuc20lg4-medhavi11.vercel.app/"
+              href="https://docs-blumea.vercel.app/"
               variant="outlined"
               sx={{
                 margin: "10px",

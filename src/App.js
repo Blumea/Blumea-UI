@@ -1,6 +1,5 @@
 import React from "react";
 import TopBar from "./hoc/TopBar";
-import Navbar from "./hoc/Navbar";
 import Home from "./components/Home";
 import Feature from "./components/Feature";
 import Footer from "./hoc/Footer";
@@ -22,7 +21,6 @@ function App() {
     <div className={classes.mainDiv}>
       {/* <TopBar /> */}
       <NewNav />
-      {/* <Navbar /> */}
       <Home />
       <Feature />
       <Demo />

@@ -98,7 +98,7 @@ const useStyles = makeStyles({
 });
 
 const drawerWidth = 180;
-const navItems = ["Home", "Features", "Demo","Docs", "Pricing", "Contact"];
+const navItems = ["Home", "Features", "Demo","Docs"];
 
 function DrawerAppBar(props) {
   const classes = useStyles();
