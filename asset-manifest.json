@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/blumea-ui/static/css/main.a25811df.css",
-    "main.js": "/blumea-ui/static/js/main.86ceea4d.js",
-    "static/media/BG-Edit.png": "/blumea-ui/static/media/BG-Edit.53cbadaff50779804d18.png",
-    "static/media/BGreen.png": "/blumea-ui/static/media/BGreen.92300b7f836c4cb17d3b.png",
-    "static/media/SampleUse.svg": "/blumea-ui/static/media/SampleUse.486f19fdcbda2cc10ccda222d365d7a0.svg",
-    "static/media/import.svg": "/blumea-ui/static/media/import.c8b05b0a9d21a10c5f5360b6b24bac06.svg",
-    "index.html": "/blumea-ui/index.html",
-    "main.a25811df.css.map": "/blumea-ui/static/css/main.a25811df.css.map",
-    "main.86ceea4d.js.map": "/blumea-ui/static/js/main.86ceea4d.js.map"
+    "main.css": "/Blumea-UI/static/css/main.a25811df.css",
+    "main.js": "/Blumea-UI/static/js/main.bfd47a35.js",
+    "static/media/BG-Edit.png": "/Blumea-UI/static/media/BG-Edit.53cbadaff50779804d18.png",
+    "static/media/BGreen.png": "/Blumea-UI/static/media/BGreen.92300b7f836c4cb17d3b.png",
+    "static/media/SampleUse.svg": "/Blumea-UI/static/media/SampleUse.486f19fdcbda2cc10ccda222d365d7a0.svg",
+    "static/media/import.svg": "/Blumea-UI/static/media/import.c8b05b0a9d21a10c5f5360b6b24bac06.svg",
+    "index.html": "/Blumea-UI/index.html",
+    "main.a25811df.css.map": "/Blumea-UI/static/css/main.a25811df.css.map",
+    "main.bfd47a35.js.map": "/Blumea-UI/static/js/main.bfd47a35.js.map"
   },
   "entrypoints": [
     "static/css/main.a25811df.css",
-    "static/js/main.86ceea4d.js"
+    "static/js/main.bfd47a35.js"
   ]
 }
