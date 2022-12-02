@@ -286,22 +286,22 @@ function Demo() {
                 <FormControlLabel
                   value="type1"
                   control={<Radio color="custom" />}
-                  label="Type 1"
+                  label="Basic filter"
                 />
                 <FormControlLabel
                   value="type2"
                   control={<Radio color="custom" />}
-                  label="Type 2"
+                  label="Classical Bloom filter"
                 />
                 <FormControlLabel
                   value="type3"
                   control={<Radio color="custom" />}
-                  label="Type 3"
+                  label="Counting Bloom filter"
                 />
                 <FormControlLabel
                   value="type4"
                   control={<Radio color="custom" />}
-                  label="Type 4"
+                  label="Cuckoo Bloom filter"
                 />
               </RadioGroup>
             </ThemeProvider>
