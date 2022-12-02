@@ -139,7 +139,7 @@ function Demo() {
     setStatusCode(0);
   }, [value]);
   useEffect(() => {
-    if (value !== "" && action!=="search") {
+    if (value !== "" && action !== "search") {
       backendSearch(value);
     }
   }, [user]);
@@ -202,9 +202,7 @@ function Demo() {
             setMessage("User Found");
             setOpen(true);
             setStatusCode(0);
-          }
-          else
-          {
+          } else {
             setMessageCode("error");
             setMessage("User Not Found");
             setOpen(true);
@@ -223,7 +221,7 @@ function Demo() {
   };
 
   return (
-    <div className={classes.mainDiv}>
+    <div className={classes.mainDiv} id="demo">
       <Snackbar
         open={open}
         autoHideDuration={3000}
@@ -288,22 +286,22 @@ function Demo() {
                 <FormControlLabel
                   value="type1"
                   control={<Radio color="custom" />}
-                  label="Type 1"
+                  label="Basic filter"
                 />
                 <FormControlLabel
                   value="type2"
                   control={<Radio color="custom" />}
-                  label="Type 2"
+                  label="Classical Bloom filter"
                 />
                 <FormControlLabel
                   value="type3"
                   control={<Radio color="custom" />}
-                  label="Type 3"
+                  label="Counting Bloom filter"
                 />
                 <FormControlLabel
                   value="type4"
                   control={<Radio color="custom" />}
-                  label="Type 4"
+                  label="Cuckoo Bloom filter"
                 />
               </RadioGroup>
             </ThemeProvider>

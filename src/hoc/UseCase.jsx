@@ -70,7 +70,7 @@ const useStyles = makeStyles({
 function UseCase() {
   const classes = useStyles();
   return (
-    <div className={classes.mainDiv}>
+    <div className={classes.mainDiv} id="features">
       <div className={classes.ImportDiv}>
         <div className={classes.ImageDiv}>
           <img src={ImportImage} alt="Import" width="100%" />
