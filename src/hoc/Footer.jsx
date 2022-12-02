@@ -216,7 +216,7 @@ function Footer() {
             needle-in-a-haystack searches quickly and efficiently.
           </p>
         </div>
-        <div className={classes.footerPLink}>
+        {/* <div className={classes.footerPLink}>
           <h3>Resources</h3>
           <ul>
             <li>Getting Started</li>
@@ -233,7 +233,7 @@ function Footer() {
             <li>Community</li>
             <li>Contact Us</li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className={classes.copyRight}>
         <div className={classes.innerDiv}>
