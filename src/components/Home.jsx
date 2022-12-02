@@ -106,7 +106,7 @@ const useStyes = makeStyles({
 function Home() {
   const classes = useStyes();
   return (
-    <div className={classes.mainDiv}>
+    <div className={classes.mainDiv} id="home">
       <img
         src={LogoWhite}
         alt="Logo"

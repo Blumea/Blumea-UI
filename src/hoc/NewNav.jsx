@@ -18,7 +18,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
 import Logo from "../assets/BGreen.png";
 
-
 const theme = createTheme({
   status: {
     danger: "#e53e3e",
@@ -98,7 +97,12 @@ const useStyles = makeStyles({
 });
 
 const drawerWidth = 180;
-const navItems = ["Home", "Features", "Demo","Docs"];
+const navItems = [
+  { name: "Home", link: "#home" },
+  { name: "Features", link: "#features" },
+  { name: "Demo", link: "#demo" },
+  { name: "Docs", link: "https://docs-blumea.vercel.app/" },
+];
 
 function DrawerAppBar(props) {
   const classes = useStyles();
@@ -120,9 +124,9 @@ function DrawerAppBar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.name} disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }} href={item.link}>
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -157,14 +161,14 @@ function DrawerAppBar(props) {
             >
               <div className={classes.brandPlate}>
                 {/* <img src={Logo} alt="Logo" width="40px" /> */}
-                              {/* &nbsp; */}
-                              &nbsp;Blumea
+                {/* &nbsp; */}
+                &nbsp;Blumea
               </div>
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
+                <Button key={item.name} sx={{ color: "#fff" }} href={item.link}>
+                  {item.name}
                 </Button>
               ))}
             </Box>

@@ -139,7 +139,7 @@ function Demo() {
     setStatusCode(0);
   }, [value]);
   useEffect(() => {
-    if (value !== "" && action!=="search") {
+    if (value !== "" && action !== "search") {
       backendSearch(value);
     }
   }, [user]);
@@ -202,9 +202,7 @@ function Demo() {
             setMessage("User Found");
             setOpen(true);
             setStatusCode(0);
-          }
-          else
-          {
+          } else {
             setMessageCode("error");
             setMessage("User Not Found");
             setOpen(true);
@@ -223,7 +221,7 @@ function Demo() {
   };
 
   return (
-    <div className={classes.mainDiv}>
+    <div className={classes.mainDiv} id="demo">
       <Snackbar
         open={open}
         autoHideDuration={3000}
