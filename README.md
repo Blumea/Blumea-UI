@@ -1,5 +1,7 @@
-# Getting Started with Create React App
+# Blumea UI
+![blumeabanner_static](https://user-images.githubusercontent.com/56465610/215419663-469549a2-ac0c-4ade-b3af-710e68ca6c94.png)
 
+## React.js - Client App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
