@@ -2,7 +2,8 @@ import React from "react";
 import { makeStyles } from "@mui/styles";
 import NavigateNextOutlinedIcon from "@mui/icons-material/NavigateNextOutlined";
 import CopyrightOutlinedIcon from "@mui/icons-material/CopyrightOutlined";
-
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Feedback from "../components/Feedback";
 import Logo from "../assets/BG-Edit.png";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -164,6 +165,13 @@ const useStyes = makeStyles({
 });
 function Footer() {
   const classes = useStyes();
+  const navigate = useNavigate();
+
+  const navigateToFeedback = () => {
+    // 👇️ navigate to /contacts
+    navigate("/feedback");
+  };
+
   return (
     <div className={classes.mainDiv}>
       <div className={classes.topBar}>
@@ -216,6 +224,9 @@ function Footer() {
             needle-in-a-haystack searches quickly and efficiently.
           </p>
         </div>
+        <p>
+          <Button onClick={navigateToFeedback}>Feedback</Button>
+        </p>
         {/* <div className={classes.footerPLink}>
           <h3>Resources</h3>
           <ul>
@@ -237,9 +248,12 @@ function Footer() {
       </div>
       <div className={classes.copyRight}>
         <div className={classes.innerDiv}>
-          Copyright&nbsp; <CopyrightOutlinedIcon /> &nbsp;2022 Blumea
+          Copyright&nbsp; <CopyrightOutlinedIcon /> &nbsp;2024 Blumea
         </div>
       </div>
+      <Routes>
+        <Route path="/feedback" element={<Feedback />} />
+      </Routes>
     </div>
   );
 }

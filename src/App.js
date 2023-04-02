@@ -7,6 +7,8 @@ import { makeStyles } from "@mui/styles";
 import UseCase from "./hoc/UseCase";
 import Demo from "./components/Demo";
 import NewNav from "./hoc/NewNav";
+import { BrowserRouter as Router } from "react-router-dom";
+
 const useStyles = makeStyles({
   mainDiv: {
     display: "flex",
@@ -18,15 +20,15 @@ const useStyles = makeStyles({
 function App() {
   const classes = useStyles();
   return (
-    <div className={classes.mainDiv}>
-      {/* <TopBar /> */}
-      <NewNav />
-      <Home />
-      <Feature />
-      <Demo />
-      <UseCase />
-      <Footer />
-    </div>
+      <div className={classes.mainDiv}>
+        {/* <TopBar /> */}
+        <NewNav />
+        <Home />
+        <Feature />
+        <Demo />
+        <UseCase />
+        <Footer />
+      </div>
   );
 }
 
