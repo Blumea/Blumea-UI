@@ -226,6 +226,7 @@ function Footer() {
         </div>
         <div>
           <Button
+            onClick={navigateToFeedback}
             // href="https://blumea-b00696.login.mojoauth.com?redirect_uri=https://blumea.github.io/Blumea-UI/"
           >
             Feedback{" "}
