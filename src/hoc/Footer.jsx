@@ -168,7 +168,6 @@ function Footer() {
   const navigate = useNavigate();
 
   const navigateToFeedback = () => {
-    // 👇️ navigate to /contacts
     navigate("/feedback");
   };
   const [payload, setPayload] = React.useState(null);
@@ -227,12 +226,11 @@ function Footer() {
         </div>
         <div>
           <Button
-            onClick={navigateToFeedback}
-            href="https://blumea-b00696.login.mojoauth.com?redirect_uri=https://blumea.github.io/Blumea-UI/"
+            // href="https://blumea-b00696.login.mojoauth.com?redirect_uri=https://blumea.github.io/Blumea-UI/"
           >
             Feedback{" "}
           </Button>
-          <pre>{JSON.stringify(payload, null, 4)}</pre>
+          {/* <pre>{JSON.stringify(payload, null, 4)}</pre> */}
         </div>
         {/* <div className={classes.footerPLink}>
           <h3>Resources</h3>
