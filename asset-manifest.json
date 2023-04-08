@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Blumea-UI/static/css/main.20a832d3.css",
-    "main.js": "/Blumea-UI/static/js/main.b3632083.js",
+    "main.js": "/Blumea-UI/static/js/main.1d223abc.js",
     "static/media/BG-Edit.png": "/Blumea-UI/static/media/BG-Edit.53cbadaff50779804d18.png",
     "static/media/BGreen.png": "/Blumea-UI/static/media/BGreen.92300b7f836c4cb17d3b.png",
     "static/media/SampleUse.svg": "/Blumea-UI/static/media/SampleUse.486f19fdcbda2cc10ccda222d365d7a0.svg",
     "static/media/import.svg": "/Blumea-UI/static/media/import.c8b05b0a9d21a10c5f5360b6b24bac06.svg",
     "index.html": "/Blumea-UI/index.html",
     "main.20a832d3.css.map": "/Blumea-UI/static/css/main.20a832d3.css.map",
-    "main.b3632083.js.map": "/Blumea-UI/static/js/main.b3632083.js.map"
+    "main.1d223abc.js.map": "/Blumea-UI/static/js/main.1d223abc.js.map"
   },
   "entrypoints": [
     "static/css/main.20a832d3.css",
-    "static/js/main.b3632083.js"
+    "static/js/main.1d223abc.js"
   ]
 }
