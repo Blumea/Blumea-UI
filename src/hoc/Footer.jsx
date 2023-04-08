@@ -227,7 +227,7 @@ function Footer() {
         <div>
           <Button
             onClick={navigateToFeedback}
-            // href="https://blumea-b00696.login.mojoauth.com?redirect_uri=https://blumea.github.io/Blumea-UI/"
+            // href="https://blumea-feedback-d806d9.login.mojoauth.com?redirect_uri=https://blumea.github.io/feedback"
           >
             Feedback{" "}
           </Button>
@@ -257,9 +257,9 @@ function Footer() {
           Copyright&nbsp; <CopyrightOutlinedIcon /> &nbsp;2024 Blumea
         </div>
       </div>
-      <Routes>
-        <Route path="/feedback" element={<Feedback />} />
-      </Routes>
+      {/* <Routes>
+        <Route path="/#/feedback" element={<Feedback />} />
+      </Routes> */}
     </div>
   );
 }
