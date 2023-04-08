@@ -170,7 +170,6 @@ function Footer() {
   const navigateToFeedback = () => {
     navigate("/feedback");
   };
-  const [payload, setPayload] = React.useState(null);
 
   return (
     <div className={classes.mainDiv}>
@@ -226,8 +225,8 @@ function Footer() {
         </div>
         <div>
           <Button
-            onClick={navigateToFeedback}
-            // href="https://blumea-feedback-d806d9.login.mojoauth.com?redirect_uri=https://blumea.github.io/feedback"
+            // onClick={navigateToFeedback}
+            href="https://blumea-feedback-d806d9.login.mojoauth.com?redirect_uri=https://medhavibasera.github.io/feedback/"
           >
             Feedback{" "}
           </Button>
