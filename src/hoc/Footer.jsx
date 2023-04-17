@@ -224,12 +224,12 @@ function Footer() {
           </p>
         </div>
         <div>
-          <Button
-            // onClick={navigateToFeedback}
+          {/* <Button
+            onClick={navigateToFeedback}
             href="https://blumea-feedback-d806d9.login.mojoauth.com?redirect_uri=https://medhavibasera.github.io/feedback/"
           >
             Feedback{" "}
-          </Button>
+          </Button> */}
           {/* <pre>{JSON.stringify(payload, null, 4)}</pre> */}
         </div>
         {/* <div className={classes.footerPLink}>

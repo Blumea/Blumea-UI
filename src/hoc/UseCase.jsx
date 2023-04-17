@@ -6,12 +6,13 @@ const useStyles = makeStyles({
   mainDiv: {
     maxWidth: "1200px",
     width: "100%",
+    margin: "40px",
   },
   ImportDiv: {
     display: "grid",
     gridTemplateColumns: "60% 30%",
     justifyContent: "space-between",
-    margin: "0px 0px 80px",
+    margin: "50px 0px 0px",
     "& h1": {
       fontSize: "50px",
     },
@@ -29,7 +30,7 @@ const useStyles = makeStyles({
     display: "grid",
     gridTemplateColumns: "30% 60%",
     justifyContent: "space-between",
-    margin: "50px 0px 150px",
+    margin: "50px 0px 0px",
     "& h1": {
       fontSize: "50px",
     },
@@ -97,6 +98,20 @@ function UseCase() {
         </div>
         <div className={classes.ImageDiv}>
           <img src={SampleCase} alt="Import" width="100%" />
+        </div>
+      </div>
+      <div className={classes.ImportDiv}>
+        <div className={classes.ImageDiv}>
+          <img src={ImportImage} alt="Import" width="100%" />
+        </div>
+        <div className={classes.TextDiv}>
+          <h1>
+            <span className={classes.HighLight}>Easy</span> to Import
+          </h1>
+          <p>
+            Build encapsulated components that manage their own state, then
+            compose them to make complex UIs.
+          </p>
         </div>
       </div>
     </div>

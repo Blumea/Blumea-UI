@@ -98,10 +98,12 @@ const useStyles = makeStyles({
 
 const drawerWidth = 180;
 const navItems = [
-  { name: "Home", link: "#home" },
-  { name: "Features", link: "#features" },
-  { name: "Demo", link: "#demo" },
   { name: "Docs", link: "https://docs-blumea.vercel.app/" },
+  { name: "Demo", link: "#demo" },
+  {
+    name: "Feedback",
+    link: "https://blumea-feedback-d806d9.login.mojoauth.com?redirect_uri=https://medhavibasera.github.io/feedback/",
+  },
 ];
 
 function DrawerAppBar(props) {
@@ -195,6 +197,7 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </Box>
+    
     </Box>
   );
 }

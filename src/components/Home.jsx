@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import NavigateNextOutlinedIcon from "@mui/icons-material/NavigateNextOutlined";
-import LogoWhite from "../assets/BG-Edit.png";
+import LogoWhite from "../assets/BGreen.png";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 const theme = createTheme({
@@ -21,40 +21,47 @@ const theme = createTheme({
       main: "#29caa5",
       darker: "#1a5a60",
     },
+    new: {
+      main: "#000",
+    },
   },
 });
 const useStyes = makeStyles({
   mainDiv: {
-    backgroundColor: "#282c34",
+    backgroundColor: "#fff",
     width: "100%",
-    height: "530px",
+    height: "700px",
     position: "relative",
     overflow: "hidden",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     zIndex: 1,
+    marginTop: "20px",
   },
   bgLogo: {
     position: "absolute",
     right: "0",
-    top: "80px",
+    top: "100px",
     zIndex: -1,
   },
   brandName: {
-    color: "#29caa5",
-    fontWeight: 700,
-    fontSize: "60px",
+    color: "#000",
+    fontWeight: 800,
+    fontSize: "15rem",
     display: "flex",
     justifyContent: "center",
-    "@media (max-width: 565px)": {
-      fontSize: "48px",
+    "@media (max-width: 900px)": {
+      fontSize: "10rem",
+    },
+    "@media (max-width: 700px)": {
+      fontSize: "6rem",
     },
   },
   subTitle: {
-    color: "#fff",
-    fontSize: "32px",
-    fontWeight: 200,
+    color: "#000",
+    fontSize: "25px",
+    fontWeight: 600,
     zIndex: 1,
     margin: "20px 0px 60px ",
     textAlign: "center",
@@ -66,6 +73,7 @@ const useStyes = makeStyles({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    fontWeight: 600,
     "@media (max-width: 545px)": {
       flexWrap: "wrap",
     },
@@ -74,7 +82,6 @@ const useStyes = makeStyles({
     textDecoration: "none",
     width: "150px",
     height: "50px",
-    // backgroundColor: "#61dafb",
     backgroundColor: "#29caa5",
     fontSize: "21px",
     border: "none",
@@ -84,7 +91,6 @@ const useStyes = makeStyles({
     },
   },
   docLink: {
-    // color: "#61dafb",
     color: "#29caa5",
     fontSize: "21px",
     fontWeight: 400,
@@ -111,12 +117,20 @@ function Home() {
         src={LogoWhite}
         alt="Logo"
         className={classes.bgLogo}
-        width="450px"
+        width="800px"
       />
       <div className={classes.centeralSection}>
-        <span className={classes.brandName}>Blumea</span>
+        <span className={classes.brandName}>Blumea.</span>
         <div className={classes.subTitle}>
-          An NPM package to Bloomify all your projects.
+          Simplifying Bloom Filters integrations.
+          <span
+            style={{
+              color: "#29caa5",
+              textShadow: "0 0 3px #000, 0 0 5px #000",
+            }}
+          >
+            {" "}Designed for Developers.
+          </span>
         </div>
         <div className={classes.hyperlinkDiv}>
           {/* <button className={classes.baseButton}>Get Started</button> */}
@@ -128,6 +142,7 @@ function Home() {
               color="custom"
               sx={{
                 margin: "10px",
+                fontWeight: "600",
               }}
             >
               Get Started
@@ -139,11 +154,13 @@ function Home() {
               variant="outlined"
               sx={{
                 margin: "10px",
+                fontWeight: "600",
+
                 // padding: "7px",
               }}
               size="large"
               endIcon={<NavigateNextOutlinedIcon />}
-              color="custom"
+              color="new"
             >
               Take a Tour
             </Button>
