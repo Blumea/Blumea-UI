@@ -23,16 +23,8 @@ const theme = createTheme({
     danger: "#e53e3e",
   },
   palette: {
-    primary: {
-      main: "#0971f1",
-      darker: "#053e85",
-    },
-    neutral: {
-      main: "#64748B",
-      contrastText: "#fff",
-    },
     custom: {
-      main: "#106458",
+      main: "#000",
       darker: "#1a5a60",
     },
     whiteColor: {
@@ -60,14 +52,17 @@ const useStyles = makeStyles({
   brandPlate: {
     // color: "#61dafb",
     color: "#29caa5",
-    fontSize: "24px",
-    fontWeight: 700,
+    fontSize: "22px",
+    fontWeight: 800,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     height: "50px",
     width: "max-content",
+    "@media (max-width: 600px)": {
+      width: "100%",
+    },
     // justifyContent: "center",
     // alignItems: "center",
   },
@@ -94,12 +89,19 @@ const useStyles = makeStyles({
       alignItems: "center",
     },
   },
+  brandBox: {
+    justifyContent: "center",
+    alignItems: "center",
+    display: "flex",
+    width: "100%",
+    fontWeight: "800",
+    margin: "0px",
+  },
 });
 
 const drawerWidth = 180;
 const navItems = [
   { name: "Docs", link: "https://docs-blumea.vercel.app/" },
-  { name: "Demo", link: "#demo" },
   {
     name: "Feedback",
     link: "https://blumea-feedback-d806d9.login.mojoauth.com?redirect_uri=https://medhavibasera.github.io/feedback/",
@@ -119,8 +121,10 @@ function DrawerAppBar(props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       {/* <Typography variant="h6" sx={{ my: 2 }}> */}
       <div className={classes.brandPlate}>
-        {/* <img src={Logo} alt="Logo" width="40px" /> */}
-        &nbsp;Blumea
+        <div className={classes.brandBox}>
+          <img src={Logo} alt="Logo" width="20px" />
+          <span>&nbsp;Blumea</span>
+        </div>
       </div>
       {/* </Typography> */}
       <Divider />
@@ -143,7 +147,9 @@ function DrawerAppBar(props) {
     <Box sx={{ display: "flex" }}>
       <ThemeProvider theme={theme}>
         <AppBar component="nav" color="custom">
-          <Toolbar variant="dense">
+          <Toolbar
+          // variant="dense"
+          >
             <IconButton
               color="whiteColor"
               aria-label="open drawer"
@@ -164,12 +170,22 @@ function DrawerAppBar(props) {
               <div className={classes.brandPlate}>
                 {/* <img src={Logo} alt="Logo" width="40px" /> */}
                 {/* &nbsp; */}
-                &nbsp;Blumea
+                <a
+                  href="/"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  {" "}
+                  &nbsp;Blumea
+                </a>
               </div>
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
-                <Button key={item.name} sx={{ color: "#fff" }} href={item.link}>
+                <Button
+                  key={item.name}
+                  sx={{ color: "#fff", fontWeight: "600" }}
+                  href={item.link}
+                >
                   {item.name}
                 </Button>
               ))}
@@ -197,16 +213,11 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </Box>
-    
     </Box>
   );
 }
 
 DrawerAppBar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window: PropTypes.func,
 };
 

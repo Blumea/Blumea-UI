@@ -126,7 +126,7 @@ function Home() {
           <span
             style={{
               color: "#29caa5",
-              textShadow: "0 0 3px #000, 0 0 5px #000",
+              textShadow: "1px 1px 10px #000, 1px 1px 10px #000",
             }}
           >
             {" "}Designed for Developers.

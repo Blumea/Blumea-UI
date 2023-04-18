@@ -38,11 +38,10 @@ function App() {
         </div>
       ) : (
         <div className={classes.mainDiv}>
-          {/* <TopBar /> */}
           <NewNav />
           <Home />
-          {/* <Feature /> */}
-          {/* <Demo /> */}
+          {/* <Feature />
+          <Demo /> */}
           <UseCase />
           <Footer />
         </div>

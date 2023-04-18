@@ -67,11 +67,35 @@ const useStyles = makeStyles({
       },
     },
   },
+  headingDiv: {
+    // backgroundColor: "red",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+
+    // fontFamily: "inter",
+    fontSize: "4rem",
+    fontWeight: "800",
+    "@media (max-width: 800px)": {
+      fontSize: "2rem",
+      fontWeight: "800",
+    },
+  },
 });
 function UseCase() {
   const classes = useStyles();
   return (
     <div className={classes.mainDiv} id="features">
+      <div className={classes.headingDiv}>
+        <p>
+          EXPLORE THE{" "}
+          <span style={{ color: "#29caa5", textDecoration: "underline" }}>
+            {" "}
+            BLUMEA
+          </span>{" "}
+          WAY
+        </p>
+      </div>
       <div className={classes.ImportDiv}>
         <div className={classes.ImageDiv}>
           <img src={ImportImage} alt="Import" width="100%" />
