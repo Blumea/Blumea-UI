@@ -7,6 +7,7 @@ const useStyles = makeStyles({
     maxWidth: "1200px",
     width: "100%",
     margin: "40px",
+    padding: "50px 10px",
   },
   ImportDiv: {
     display: "grid",
@@ -102,22 +103,24 @@ function UseCase() {
         </div>
         <div className={classes.TextDiv}>
           <h1>
-            <span className={classes.HighLight}>Easy</span> to Import
+            <span className={classes.HighLight}>Faster</span> results
           </h1>
           <p>
-            Build encapsulated components that manage their own state, then
-            compose them to make complex UIs.
+            Using hash tables and similar data structures to store the data,
+            blumea can successfully retrieve data for any query with a constant
+            time complexity every time without failing.
           </p>
         </div>
       </div>
       <div className={classes.UseCaseDiv}>
         <div className={classes.TextDiv}>
           <h1>
-            <span className={classes.HighLight}>Simple</span> Structure
+            <span className={classes.HighLight}>Reliable</span> to use
           </h1>
           <p>
-            Build encapsulated components that manage their own state, then
-            compose them to make complex UIs.
+            Provides an accurate result for every query. It uses a number of
+            structures like counters, hashing, and partitioning to reduce the
+            chances of false positives for the queries, making it very reliable.
           </p>
         </div>
         <div className={classes.ImageDiv}>
@@ -130,11 +133,12 @@ function UseCase() {
         </div>
         <div className={classes.TextDiv}>
           <h1>
-            <span className={classes.HighLight}>Easy</span> to Import
+            <span className={classes.HighLight}>Efficient</span> to use
           </h1>
           <p>
-            Build encapsulated components that manage their own state, then
-            compose them to make complex UIs.
+            Enables the user to store data and retrieve it efficiently. No
+            matter how big the data is, blumea ensures to provide quick query
+            results efficiently.
           </p>
         </div>
       </div>

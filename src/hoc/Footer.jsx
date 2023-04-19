@@ -223,33 +223,6 @@ function Footer() {
             needle-in-a-haystack searches quickly and efficiently.
           </p>
         </div>
-        <div>
-          {/* <Button
-            onClick={navigateToFeedback}
-            href="https://blumea-feedback-d806d9.login.mojoauth.com?redirect_uri=https://medhavibasera.github.io/feedback/"
-          >
-            Feedback{" "}
-          </Button> */}
-          {/* <pre>{JSON.stringify(payload, null, 4)}</pre> */}
-        </div>
-        {/* <div className={classes.footerPLink}>
-          <h3>Resources</h3>
-          <ul>
-            <li>Getting Started</li>
-            <li>Main Concepts</li>
-            <li>Open Source</li>
-            <li>Docs</li>
-          </ul>
-        </div>
-        <div className={classes.footerSLink}>
-          <h3>Links</h3>
-          <ul>
-            <li>About</li>
-            <li>FAQ</li>
-            <li>Community</li>
-            <li>Contact Us</li>
-          </ul>
-        </div> */}
       </div>
       <div className={classes.copyRight}>
         <div className={classes.innerDiv}>
