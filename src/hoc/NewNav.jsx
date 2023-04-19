@@ -103,6 +103,10 @@ const drawerWidth = 180;
 const navItems = [
   { name: "Docs", link: "https://docs-blumea.vercel.app/" },
   {
+    name: "Playground",
+    link: "https://docs-blumea.vercel.app/",
+  },
+  {
     name: "Feedback",
     link: "https://blumea-feedback-d806d9.login.mojoauth.com?redirect_uri=https://medhavibasera.github.io/feedback/",
   },

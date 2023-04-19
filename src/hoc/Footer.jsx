@@ -4,7 +4,7 @@ import NavigateNextOutlinedIcon from "@mui/icons-material/NavigateNextOutlined";
 import CopyrightOutlinedIcon from "@mui/icons-material/CopyrightOutlined";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Feedback from "../components/Feedback";
-import Logo from "../assets/BG-Edit.png";
+import Logo from "../assets/LogoBG.png";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 const theme = createTheme({
@@ -86,7 +86,10 @@ const useStyes = makeStyles({
     alignItems: "center",
   },
   footerBrand: {
-    maxWidth: "400px",
+    maxWidth: "600px",
+    display: "flex",
+    alignItems: "center",
+    // backgroundColor: "red",
     color: "#fff",
     "& p": {
       fontSize: "18px",
@@ -97,7 +100,7 @@ const useStyes = makeStyles({
   },
   footerBrandTitle: {
     color: "#29caa5",
-    fontSize: "26px",
+    fontSize: "50px",
     fontWeight: 700,
   },
   footerPLink: {
@@ -147,14 +150,13 @@ const useStyes = makeStyles({
   copyRight: {
     width: "100%",
     padding: "10px 0px",
-    backgroundColor: "#282c34",
     disdplay: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     color: "#fff",
     fontSize: "18px",
-    fontWeight: 100,
+    fontWeight: 600,
     textAlign: "center",
   },
   innerDiv: {
@@ -173,9 +175,8 @@ function Footer() {
 
   return (
     <div className={classes.mainDiv}>
-      <div className={classes.topBar}>
+      {/* <div className={classes.topBar}>
         <div className={classes.hyperlinkDiv}>
-          {/* <button className={classes.baseButton}>Get Started</button> */}
           <ThemeProvider theme={theme}>
             <Button
               href="https://www.npmjs.com/package/blumea"
@@ -190,17 +191,13 @@ function Footer() {
             </Button>
           </ThemeProvider>
           <a>
-            {/* <span className={classes.docLink}>
-              Take The Tutorial&nbsp;
-              <NavigateNextOutlinedIcon />
-            </span> */}
+          
             <ThemeProvider theme={theme}>
               <Button
                 href="https://docs-blumea.vercel.app/"
                 variant="outlined"
                 sx={{
                   margin: "10px 5px 10px 5px",
-                  // padding: "7px",
                 }}
                 size="large"
                 endIcon={<NavigateNextOutlinedIcon />}
@@ -211,22 +208,16 @@ function Footer() {
             </ThemeProvider>
           </a>
         </div>
-      </div>
+      </div> */}
       <div className={classes.mainSection}>
         <div className={classes.footerBrand}>
           <img src={Logo} width="50px" />
           &nbsp;<span className={classes.footerBrandTitle}>Blumea</span>
-          <p>
-            Blumea makes it easy for anyone to implement data lookup and storage
-            through a plentitude of data. No matter how big the data is, Blumea
-            will ensure that you will get the results to your
-            needle-in-a-haystack searches quickly and efficiently.
-          </p>
         </div>
       </div>
       <div className={classes.copyRight}>
         <div className={classes.innerDiv}>
-          Copyright&nbsp; <CopyrightOutlinedIcon /> &nbsp;2024 Blumea
+          &nbsp; <CopyrightOutlinedIcon /> &nbsp;2024 Blumea
         </div>
       </div>
       {/* <Routes>
