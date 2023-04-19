@@ -30,7 +30,7 @@ const useStyes = makeStyles({
   mainDiv: {
     backgroundColor: "#fff",
     width: "100%",
-    height: "700px",
+    height: "100vh",
     position: "relative",
     overflow: "hidden",
     display: "flex",
@@ -129,7 +129,8 @@ function Home() {
               textShadow: "1px 1px 10px #000, 1px 1px 10px #000",
             }}
           >
-            {" "}Designed for Developers.
+            {" "}
+            Designed for Developers.
           </span>
         </div>
         <div className={classes.hyperlinkDiv}>
