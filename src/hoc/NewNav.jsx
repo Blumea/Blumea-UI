@@ -104,7 +104,7 @@ const navItems = [
   { name: "Docs", link: "https://docs-blumea.vercel.app/" },
   {
     name: "Playground",
-    link: "https://docs-blumea.vercel.app/",
+    link: "https://blumea-playground.vercel.app/",
   },
   {
     name: "Feedback",
@@ -175,7 +175,7 @@ function DrawerAppBar(props) {
                 {/* <img src={Logo} alt="Logo" width="40px" /> */}
                 {/* &nbsp; */}
                 <a
-                  href="/"
+                  href="https://blumea.github.io/Blumea-UI/"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   {" "}
