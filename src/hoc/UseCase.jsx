@@ -24,7 +24,7 @@ const useStyles = makeStyles({
       gridTemplateColumns: "auto",
       justifyContent: "center",
       // alignItems: "center",
-      margin: "5px 0px 5px",
+      margin: "5px 0px 0px",
     },
   },
   UseCaseDiv: {
@@ -41,7 +41,6 @@ const useStyles = makeStyles({
     "@media (max-width: 1259px)": {
       gridTemplateColumns: "auto",
       justifyContent: "center",
-      margin: "20px 0px 80px",
     },
   },
   HighLight: {
@@ -106,21 +105,19 @@ function UseCase() {
             <span className={classes.HighLight}>Faster</span> results
           </h1>
           <p>
-            Using hash tables and similar data structures to store the data,
-            blumea can successfully retrieve data for any query with a constant
-            time complexity every time without failing.
+            Blumea's rapid data retrieval for queries uses hash tables and other
+            funct‭ions to give successful results every time
           </p>
         </div>
       </div>
       <div className={classes.UseCaseDiv}>
         <div className={classes.TextDiv}>
           <h1>
-            <span className={classes.HighLight}>Reliable</span> to use
+            <span className={classes.HighLight}>Efficient</span> to use
           </h1>
           <p>
-            Provides an accurate result for every query. It uses a number of
-            structures like counters, hashing, and partitioning to reduce the
-            chances of false positives for the queries, making it very reliable.
+            Blumea enables effective data storage and retrieval irrespective of
+            the volume of the data, ensuring quick and efficient results.
           </p>
         </div>
         <div className={classes.ImageDiv}>
@@ -133,12 +130,12 @@ function UseCase() {
         </div>
         <div className={classes.TextDiv}>
           <h1>
-            <span className={classes.HighLight}>Efficient</span> to use
+            <span className={classes.HighLight}>Reliable</span> results
           </h1>
           <p>
-            Enables the user to store data and retrieve it efficiently. No
-            matter how big the data is, blumea ensures to provide quick query
-            results efficiently.
+            Blumea uses number of structures and methods to reduce the chances
+            of false positives to queries, increasing its accuracy and
+            reliability.
           </p>
         </div>
       </div>
