@@ -1,6 +1,9 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
-import ImportImage from "../assets/import.svg";
+import uiasset1 from "../assets/ui-asset-1.gif";
+import uiasset2 from "../assets/ui-asset-2.gif";
+import uiasset3 from "../assets/ui-asset-3.gif";
+
 import SampleCase from "../assets/SampleUse.svg";
 const useStyles = makeStyles({
   mainDiv: {
@@ -98,7 +101,7 @@ function UseCase() {
       </div>
       <div className={classes.ImportDiv}>
         <div className={classes.ImageDiv}>
-          <img src={ImportImage} alt="Import" width="100%" />
+          <img src={uiasset2} alt="Import" width="100%" />
         </div>
         <div className={classes.TextDiv}>
           <h1>
@@ -121,12 +124,12 @@ function UseCase() {
           </p>
         </div>
         <div className={classes.ImageDiv}>
-          <img src={SampleCase} alt="Import" width="100%" />
+          <img src={uiasset3} alt="Import" width="100%" />
         </div>
       </div>
       <div className={classes.ImportDiv}>
         <div className={classes.ImageDiv}>
-          <img src={ImportImage} alt="Import" width="100%" />
+          <img src={uiasset1} alt="Import" width="100%" />
         </div>
         <div className={classes.TextDiv}>
           <h1>
