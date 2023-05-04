@@ -86,7 +86,7 @@ const useStyles = makeStyles({
     },
   },
   ImageDiv: {
-    borderRadius: "15px",
+    borderRadius: "20px",
   },
 });
 function UseCase() {
