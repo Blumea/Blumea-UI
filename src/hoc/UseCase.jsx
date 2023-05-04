@@ -14,6 +14,7 @@ const useStyles = makeStyles({
   },
   ImportDiv: {
     display: "grid",
+    backgroundClip: "red",
     gridTemplateColumns: "60% 30%",
     justifyContent: "space-between",
     margin: "50px 0px 0px",
@@ -84,6 +85,9 @@ const useStyles = makeStyles({
       fontWeight: "800",
     },
   },
+  ImageDiv: {
+    borderRadius: "15px",
+  },
 });
 function UseCase() {
   const classes = useStyles();
@@ -100,8 +104,13 @@ function UseCase() {
         </p>
       </div>
       <div className={classes.ImportDiv}>
-        <div className={classes.ImageDiv}>
-          <img src={uiasset2} alt="Import" width="100%" />
+        <div>
+          <img
+            src={uiasset2}
+            className={classes.ImageDiv}
+            alt="Import"
+            width="100%"
+          />
         </div>
         <div className={classes.TextDiv}>
           <h1>
@@ -123,13 +132,23 @@ function UseCase() {
             the volume of the data, ensuring quick and efficient results.
           </p>
         </div>
-        <div className={classes.ImageDiv}>
-          <img src={uiasset3} alt="Import" width="100%" />
+        <div>
+          <img
+            src={uiasset3}
+            className={classes.ImageDiv}
+            alt="Import"
+            width="100%"
+          />
         </div>
       </div>
       <div className={classes.ImportDiv}>
-        <div className={classes.ImageDiv}>
-          <img src={uiasset1} alt="Import" width="100%" />
+        <div>
+          <img
+            src={uiasset1}
+            className={classes.ImageDiv}
+            alt="Import"
+            width="100%"
+          />
         </div>
         <div className={classes.TextDiv}>
           <h1>

@@ -217,7 +217,7 @@ function Footer() {
       </div>
       <div className={classes.copyRight}>
         <div className={classes.innerDiv}>
-          &nbsp; <CopyrightOutlinedIcon /> &nbsp;2024 Blumea
+          &nbsp; <CopyrightOutlinedIcon /> &nbsp;2023 Blumea
         </div>
       </div>
       {/* <Routes>
